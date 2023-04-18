@@ -31,10 +31,10 @@
 							<h2>Menu</h2>
 							<ul class="links">
 								<li><a href="index.html">Home</a></li>
-								<li><a href="about.html">About</a></li>
+								<li><a href="about.html">About me</a></li>
 								<li><a href="ux.html">UX Design</a></li>
 								<li><a href="illustrations.html">Illustrations</a></li>
-								<li><a href="generaldp.html">General Design Process</a></li>
+								<!--<li><a href="generaldp.html">General Design Process</a></li>-->
 							</ul>
 							<a href="#" class="close">Close</a>
 						</div>
@@ -44,7 +44,8 @@
 					<section id="wrapper">
 						<header>
 							<div class="inner">
-								<h2>Toreba App - UX/ UI Redesign Case Study</h2>
+								<h2>Redesigning the Toreba Game App</h2>
+								<p>Toreba, an online claw machine game by Cyberstep Inc., is currently the largest and most popular online claw machine game with over 20 million app installations. Users can play games and win prizes, which can then be sent to the user’s door.</p>
 							</div>
 						</header>
 
@@ -52,216 +53,130 @@
 							<div class="wrapper">
 								<div class="inner">
 									
-									<div class="col-12"><span class="image fit"><img src="images/toreba/toreba_banner3.jpg" alt="" /></span></div>
+									<!-- Heading Image -->
+									<div class="col-12"><span class="image fit"><img src="images/toreba/toreba_banner.jpg" alt="" /></span></div>
 
-									<h3 class="major">What is Toreba?</h3>
-									<p>Toreba is an online claw machine game owned by the Japanese video game company CyberStep, Inc. Toreba allows you to remotely play real claw machine games through the internet, allowing you to win real prizes. Any prizes that you win can be shipped to you at a cost.</p>
-
-									<p>Toreba is currently the largest and most popular online claw machine game with over 20 million app installations. As well as an app, Toreba can also be played through your browser.</p>
-
-									<h3 class="major">Why the Redesign?</h3>
-									<p>During my trip to Japan in 2020 I saw that claw machine games were very popular, which was something that I had not seen before. After returning back from Japan I wanted to see if there was something similar in the UK. From a few quick searches I found that a few claw machines do exist, however, both the prize selection and quality were both inferior to those found in Japan.</p>
-
-									<p>While searching for local machines I found that online claw machine games do exist, the most popular being Toreba. After installing and using different claw machine game apps I decided that Toreba was the best one for me due to the price and the number of different prizes.</p>
-
-									<p>Although you are able to play Toreba through a web browser, I preferred to play it on my mobile phone since the action of pressing on the screen is similar to pressing a physical button on an actual claw machine. Despite spending a bit of time with the app, I faced a few problems with navigating through the app and finding relevant prizes for myself. Also, the design felt outdated with poor organisation, labels, layout and consistency.</p>
-
-									<p>After this exploration, I set out to reimagine the Toreba app and improve the experience in any way I could.</p>
-
-
-									<h3 class="major">Goals and Motivation for the Redesign</h3>
-									<h4>My goals for the redesign</h4>
+									<p><i>The following case study is based on a personal project and I am not affiliated with Toreba.</i></p>
 									<ul>
-										<li>To deliver a personalised experience and intuitive user interface.</li>
+										<li><b>Role: </b>Sole UX/UI Designer, UX Researcher, Visual Designer</li>
+										<li><b>Industry: </b>Gaming</li>
+										<li><b>Project Length: </b>2 Week Design Sprint</li>
+										<li><b>Platform: </b>Android/iOS</li>
+										<li><b>Tools: </b>Figma, Miro, Jira</li>
+									</ul>
+
+
+									<h3 class="major">The Problem</h3>
+									<p>Despite Toreba being the largest and most popular game in its category, there were difficulties in both navigating through the app and finding relevant prizes. The design felt outdated with poor organisation, labels, layout and consistency.</p>
+
+									<h3 class="major">Solutions</h3>
+									<ul>
+										<li>To deliver a personalised experience and an intuitive user interface.</li>
 										<li>To improve visual clarity within the app.</li>
 									</ul>
 
-									<h4>Personal goals</h4>
+									<h3 class="major">Phase 1 - Research and Understanding Users</h3>
+
+									<!-- Interview image 
+									<div class="col-12">
+										<span class="image fit">
+											<center><img src="images/pic08.jpg" style="width:100%; height:100%" /></center>
+										</span>
+									</div>-->
+
+									<h4>Interviewing Existing Users</h4>
+									<p>I conducted a moderated remote interview with five existing users. The main goal of the interviews was to understand the reasons why users would buy in-game currency and what motivates them to frequently return to play.</p>
+
+									<h4>Testing the Live App</h4>
+									<p>After the interviews, I also asked the participants to test the live app. The goal of the testing was to understand how users interact with the different app features.</p>
+									
+									<h4>Insights from Interviews and Testing</h4>
 									<ul>
-										<li>Enhance my understanding of different prototyping tools.</li>
-										<li>Take ownership of the various roles involved in designing the product.</li>
+										<li>Notifications were useful in drawing the user back to the app, however, the notifications lacked personalisation and were “...annoying.”</li>
+										<li>Most users would explore the app with the search function.</li>
+										<li>When returning to the app, it was difficult for the user to locate the same prize.</li>
 									</ul>
 
+									<!-- Synthesising image -->
+									<div class="col-12">
+										<span class="image fit">
+											<center><img src="images/toreba/Toreba_affinity.jpg" style="width:100%; height:100%" /></center>
+										</span>
+									</div>
 
-									<h3 class="major">App Analysis</h3>
-									<p>Since I had already used the app, I already had a brief understanding on how to use the app. I decided to do an in-depth analysis of the app to understand the functionalities, navigation and overall architecture of the app. Through the analysis, I was able to identify some clear usability issues and pain points.</p>
+									<h3 class="major">Phase 2 - Understanding and Defining the Problem</h3>
+									<p>After examining the live app and synthesising the gathered research, the following pain points and user needs were defined.</p>
 
-
-									<h3 class="major">Understanding the Users Through User Interviews</h3>
-									<h4>Conducting User Interviews</h4>
-									
-									<p>I started my user research by conducting user interviews with 5 users of any online claw machine game, which vary from frequent paid members to infrequent free members. The main goal of the interviews was to understand what motivates the users to pay for plays and what motivates them to frequently return to play.</p>
-									
-									<p>I also put a survey onto an online forum dedicated to online claw machine games. I felt that putting a survey on the forum could accurately represent the current Toreba database.</p>
-
-									<p>Some insights from the survey:</p>
-									<ul>
-										<li>Most users open and play Toreba twice a day, mostly at night when they want to destress after work.</li>
-										<li>Most users said that the notifications grabbed their attention, which prompted them to open the app and play the game. Others said that the notifications felt endless and annoying.</li>
-										<li>Almost all users said that they opened the app to view what prizes were available. If the specific prize they wanted was available they proceeded to play the game.</li>
-										<li>The feature they use most often is the search function to find specific prizes.</li>
-										<li>Most of them said that they wanted a bit more personalisation towards prizes, for example, saving specific prizes so that they can return to it for easier access.</li>
-									</ul>
-
-
-									<h3 class="major">Understanding Existing Users</h3>
-									<h4>Going Through App Reviews</h4>
-									<p>Firstly, I started looking for reviews on the Play Store. Since Toreba is currently the largest online claw machine game, with over 20 million app downloads, I began by looking at reviews on the Play Store. Despite the large number of downloads, most of the reviews were based on the operation of the machine and shipping times of the prizes, rather than the experience of the app itself.</p>
-
-									<h4>Usability Testing</h4>
-									<p>After the user interview, I asked the same 5 users to participate in testing the Toreba app. The goal of the testing was to understand how the user will interact with the different app features. I wanted to test users that were not familiar with Toreba, so I asked 3 of my users to download Toreba and use the app instead of their usual app for a week.</p>
-									
-									<p>Some of the tasks that I gave them during the test were:</p>
-									<ul>
-										<li>Open the app and find a prize which they find interesting.</li>
-										<li>Choose a prize and try to win the prize.</li>
-										<li>Find information on how the app works.</li>
-										<li>Try and search for the latest prizes.</li>
-									</ul>
-
-
-									<h3 class="major">Defining the Problem</h3>
-									<p>After analysing the user research, I defined the following pain points that most users had trouble with.</p>
+									<!-- Pain points image -->
+									<div class="col-12">
+										<span class="image fit">
+											<center><img src="images/toreba/toreba_audit.jpg" style="width:100%; height:100%" /></center>
+										</span>
+									</div>
 
 									<h4>Pain Points</h4>
-									<h5>Pain Point 1- Confusing and cluttered UI</h5>
+									<h5 style="text-transform:none">Confusing and cluttered UI</h5>
 									<p>Most of the users complained that the UI was so cluttered, making it hard to read and focus on what the prizes were. Although they were able to read what prizes were available, there were instances of the prize titles being too long and therefore not fully displayed.</p>
 
-									<h5>Pain Point 2- No saving of games</h5>
+									<h5 style="text-transform:none">No game saving</h5>
 									<p>Some of the users wanted to save a specific prize and game so that they could try and attempt to win the prize at a later date. Currently there is no save function available so the users had to remember the specific name of the prize and search for it manually.</p>
 
-									<h5>Pain Point 3- Poor categorisation</h5>
+									<h5 style="text-transform:none">Poor categorisation</h5>
 									<p>Despite there being categories in the app, some users complained that some of the categories were a bit odd and better categories could be applied.</p>
 
-									<h5>Pain Point 4- Notifications</h5>
+									<h5 style="text-transform:none">Notifications</h5>
 									<p>Some users expressed that the notifications had irrelevant information to them, which they found tedious and annoying since they had to constantly clear these notifications.</p>
 
-									<h5>Paint Point 5- Poor game explanations</h5>
-									<p>Most of the users expressed that there are a number of different games available and they did not know how to play them all. Finding information on how to win the prizes was not readily available on the same page, meaning that they would waste an attempt.</p>
+									<!--<h5>Paint Point 5 - Poor game explanations</h5>
+									<p>Most of the users expressed that there are a number of different games available and they did not know how to play them all. Finding information on how to win the prizes was not readily available on the same page, meaning that they would waste an attempt.</p>-->
 
 									<h4>User Needs</h4>
-									<h5>Need 1- Customisation</h5>
-									<p>Users expressed that they want a more customised experience, this includes setting up personalised notifications for specific prizes and a way to save specific prizes for easy access.</p>
+									<h5 style="text-transform:none">Personalisation</h5>
+									<p>Users expressed that they want a more personalised experience, this includes setting up custom notifications for specific prizes and a way to save specific prizes for easy access.</p>
 
-									<h5>Need 2- More features</h5>
+									<h5 style="text-transform:none">More features</h5>
 									<p>The users wanted more features such as saving games and sharing how they won their prizes via video.</p>
 
+									<h3 class="major">Phase 3 - Prototyping and Sketching</h3>
 
-									<h3 class="major">Competitive Analysis</h3>
-									<p>Competitive analysis was conducted by listing features in a structured tabular format to identify the competitor and mapping out their strengths and weaknesses.</p>
-									<div class="col-4"><span class="image fit"><center><img src="images/toreba/toreba_spreadsheet.jpg" alt="" style="width:75%; height:75%" /></center>
-										<center><p style="font-size:0.9em"><i>Table of direct competitors.</i></p></center>
-									</span></div>
+									<!-- Sketching and wireframe image -->
+									<div class="col-12">
+										<span class="image fit">
+											<center><img src="images/toreba/Toreba_wireframes.jpg" style="width:100%; height:100%" /></center>
+										</span>
+									</div>
 									
-									<h3 class="major">Ideation and Paper Prototyping</h3>
-									<h4>Affinity Mapping</h4>
-									<p>Next, I compiled any feedback, insights and pain points listed above and grouped them into similar ones. Doing this helped me brainstorm and develop any potential ideas, giving me a clearer view on what is important to the user while keeping in mind the business goals and objectives.</p>
+									<h4>Sketches</h4>
+									<p>Rapid sketches were primarily used for both quick ideation and directional discussion. The sketches were placed in front of users to see what their feedback was.</p>
 
-									<div class="col-4"><span class="image fit"><center><img src="images/toreba/affinity_map.jpg" alt="" style="width:75%; height:75%" /></center>
-										<center><p style="font-size:0.9em"><i>Ideation using Affinity Mapping- Red for problems and green for possible solutions.</i></p></center>
-									</span></div>
-
-									<h4>Paper Sketches</h4>
-									<p>For the paper wireframes, the first task to complete was to list the requirements of each of the pages so that I can incorporate all the necessary elements. To see what elements were needed in the different pages, I went through the UI of the Toreba website and mobile app, its competitors and other claw machine game apps. Using this, I then sketched different possible layouts, iterating between different versions in order to find the best version. Prototyping in this way allowed me to find different solutions without committing to high fidelity designs.</p>
-
-									<p>With my paper wireframes and background research I had a better understanding of who I was designing for and how to find the best solution to the problem.</p>
-
-									<div class="col-4"><span class="image fit"><center><img src="images/toreba/toreba_paper_sketch.jpg" alt="" style="width:30%; height:30%" /></center>
-										<center><p style="font-size:0.9em"><i>Example of paper sketches</i></p></center>
-									</span></div>
-
-									<h3 class="major">UX Suggestions and the Redesign</h3>
-									<h4>"Home" Screen</h4>
-									<div class="col-4"><span class="image fit"><center><img src="images/toreba/phase1_home.jpg" alt="" style="width:75%; height:75%" /></center>
-										<center><p style="font-size:0.9em"><i>Old and new "Home" screens.</i></p></center>
-									</span></div>
-									<h5>Proposed Solution</h5>
-									<p>Visual clarity - providing greater visual clarity to the user was one the top priorities in the redesign of the app. A pain-point for most users was that longer titles would not fully display, this was rectified by simply increasing the card size to accommodate some longer titles. There was a lot of visual noise due to the strong amounts of colour used in the background of the prize thumbnails, using a more neutral colour would bring more attention to the prize.</p>
-									<p>Category navigation bar - repositioned below the promotion banner for improved organisation. Category headings were then simplified to aid the users for a more effective navigation and browsing experience. The current page indicator was removed due to confusion for users. The ability to freely swipe through the category navigation bar resulted in a more efficient navigation experience.</p>
-									<p>Bottom navigation bar - rearranged and relocated the elements of the bottom navigation bar. Burger menu and search elements are now on the header screen so that there is improved spacing throughout the whole screen and bottom navigation bar.</p>
-
-									<h4>"Prize Play" Screen</h4>
-									<div class="col-4"><span class="image fit"><center><img src="images/toreba/phase1_play.jpg" alt="" style="width:75%; height:75%" /></center>
-										<center><p style="font-size:0.9em"><i>Old and new "Prize Play" screens.</i></p></center>
-									</span></div>
-									<h5>Proposed Solution</h5>
-									<p>Game function - the main goal for the user is to try and win real life prizes. Currently you have to adjust your hand to rotate camera angles. For a more ergonomic experience, the rotate camera button was moved to the middle left of the screen.</p>
-									<p>Visual consistency - currently, the section holding the play button and other information is contained within a pink area. This colour is not visible anywhere else in the app, leading it to feel out of place. Replacing this with the same colour used for the bottom navigation bar on the “home” screen allows for greater consistency. The top header was also added to the screen for consistency as well as a container to hold more information.</p>
-									<p>Visual clarity - with the current UI it has the appearance of different elements being all over the place. UI elements such as TP, ticket and the “Charge TP” button were moved between the two game play buttons. The waiting and watching numbers are non-essential parts of the game play so they are moved below the main play area.</p>
-
-									<h4>"Prize Win" Screen</h4>
-									<div class="col-4"><span class="image fit"><center><img src="images/toreba/phase1_win.jpg" alt="" style="width:75%; height:75%" /></center>
-										<center><p style="font-size:0.9em"><i>Old and new "Prize Win" screens.</i></p></center>
-									</span></div>
-									<h5>Proposed Solution</h5>
-									<p>Currently, when you win, a full screen popup will appear showing what prize the user has won,and this can only be shared by taking a screenshot of the popup. The redesigned version shows a smaller card popup which reduces the amount of whitespace seen. The picture of the prize won is replaced with a video of how the user won. The card also contains a share button for convenient access for the user.</p>
-
-									<h4>"Notification Settings" Screen</h4>
-									<div class="col-4"><span class="image fit"><center><img src="images/toreba/phase1_notif.jpg" alt="" style="width:50%; height:50%" /></center>
-										<center><p style="font-size:0.9em"><i>Recently added "Notification Settings" screen.</i></p></center>
-									</span></div>
-									<h5>Proposed Solution</h5>
-									<p>Personalisation - there are currently no notification settings available in the app. Users can now toggle notifications as well as customise what notifications they receive. Another level of personalisation was added by allowing the user to add notifications based on custom keywords.</p>
-
-									<h4>Other Screens</h4>
-									<div class="col-4"><span class="image fit"><center><img src="images/toreba/phase1_search.jpg" alt="" style="width:75%; height:75%" /></center>
-										<center><p style="font-size:0.9em"><i>Old and new "Search" screens.</i></p></center>
-									</span></div>
-									<div class="col-4"><span class="image fit"><center><img src="images/toreba/phase1_burger.jpg" alt="" style="width:75%; height:75%" /></center>
-										<center><p style="font-size:0.9em"><i>Old and new "Burger Menu" screens.</i></p></center>
-									</span></div>
+									<h4>Wireframes</h4>
+									<p>With tight time constraints, I focused on wireframing high impact pages whose functionality needed to be laid out.</p>
+									<p>These low fidelity wireframes were used to communicate content hierarchy and critical functionalities for development.</p>
 									
-									<h3 class="major">Validation Testing</h3>
-									<p>To validate the app redesign, I surveyed 6 people with my prototype. To test the performance and usability of the redesign, 10 questions on the features were given to the survey participants.</p>
-									<p>The surveys were conducted in person and all survey participants have previously not used the original app.</p>
-
-									<h4>Successes</h4>
-									<ul>
-										<il>Some users were able to bookmark a game for later play.</il>
-										<li>A majority of the users successfully found the bookmarked games tab.</li>
-										<li>Most of the users were able to turn off notifications for a particular category.</li>
-										<li>Almost all users were able to set up custom keyword notifications.</li>
-									</ul>
-
-									<h4>Pain Points</h4>
-									<ul>
-										<il>A small number of users got confused and did not know how much each game cost.</il>
-										<li>Most users felt that it would be nice to have a list of notifications within the app.</li>
-									</ul>
+									<h4>High-fidelity Mockups</h4>
 									
-									<p>As well as validating the app redesign with 6 people, I also went through the app to see if there were any more quality of life (QoL) improvements that could be made. For example, a QoL improvement that I noticed was that using the bookmark icon is normally associated with reading, replacing it with something more appropriate to a game related symbol would be more appropriate.</p>
+									<!-- Prototype Gif -->
+									<div class="col-12">
+										<span class="">
+											<center><img src="images/toreba/Toreba_gif2.gif" style="width:25%; height:25%" /></center>
+										</span>
+									</div>
 
-									<h3 class="major">Iterations</h3>
-									<div class="col-4"><span class="image fit"><center><img src="images/toreba/iter_home.jpg" alt="" style="width:50%; height:50%" /></center>
-										<center><p style="font-size:0.9em"><i>"Home" screen iteration after validation testing.</i></p></center>
-									</span></div>
-									<h4>Problem 1- Game Cost Indication</h4>
-									<p>Although a majority of the prizes have the same play cost, the redesign failed to state the cost of each play.</p>
-									<p>Solution- Replaced the "more info" button with the prizes' price per play.</p>
+									<p>Once I had a solid design direction, I began to produce low and high-fidelity mockups. These were then converted into prototypes with limited functionality.</p>
 
-									<h4>Problem 2- Notification List</h4>
-									<p>Despite notifications being shown on the system as a list, sometimes the user may dismiss them accidently. There is currently no ability to view the notifications within the app.</p>
-									<p>Solution- Add a notifications tab on the bottom navigation bar so that users can easily access any notifications which they may have missed.</p>
+									
+									<h4>Phase 4 - Deliverables</h4>
 
-									<h4>Problem 3- Prize Save Function</h4>
-									<p>The introduction of the prize save function has brought a positive QoL improvement to the app, however, it does not mean that it is perfect. The bookmark icon is often associated with reading material, therefore, it is more appropriate if a different icon would be used instead.</p>
-									<p>Solution- Replace the bookmark icon with a start to represent "favourite" for the save function.</p>
+									<!-- Screen images -->
+									<div class="col-12">
+										<span class="image fit">
+											<center><img src="images/toreba/Toreba_deliverables.jpg" style="width:100%; height:100%" /></center>
+										</span>
+									</div>
 
-									<div class="col-4"><span class="image fit"><center><img src="images/toreba/iter_notif_dis.jpg" alt="" style="width:50%; height:50%" /></center>
-										<center><p style="font-size:0.9em"><i>Recently added "Notification List" screen.</i></p></center>
-									</span></div>
-
-									<h3 class="major">Want to try out the app?</h3>
-									<a href="https://framer.com/share/Toreba-Interactive--hkcPqKOuw8wu6O6I7v5q/EtmYk_avt" style="font-weight:900">CLICK HERE</a>
-									<p style="font-size:0.9em"><i>Best viewed on a desktop or on mobile with the Framer preview app.</i></p>
-
-									<h3 class="major">What was the Main Challenge in the Project?</h3>
-									<p>The user research such as collecting user demographics was the most challenging part. Since Toreba exists in a very niche market, it was difficult to find information on who uses the Toreba app without Toreba themself releasing the data.</p>
-
-									<h3 class="major">Reflection and Lessons Learned</h3>
-									<p>Initially, I was nervous knowing that this redesign would be a lot of work. Despite the nerves and fears, I knew that proceeding with the case study would provide the perfect opportunity to hone my design skills.</p>
+									<h3 class="major">Reflection and Lessons Learnt</h3>
+									<p>Naturally the next steps would be putting the redesign through another round of usability tests to see if the redesign solved the initial problem. Further iterations can then be done to refine and improve the redesign.</p>
 									<p>Looking back at the whole process, I enjoyed being able to take full ownership of the various roles of designing the app, naturally enjoying some roles more than others. Redesigning the app and working on the case study reminded me that while the users are the centre of the design process, it is important to balance the user needs with the business needs.</p>
-									<p>Personally, I learnt new ways to improve my overall workflow while working on this case study. These improvements can help me work more effectively, efficiently and creatively when finding solutions for future projects.</p>
 								</div>
 							</div>
 
